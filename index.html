@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Elections 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Landing Section -->
+    <section class="landing">
+        <h1 class="animated-title">US Elections 2024</h1>
+      <h2 class="animated-title">by David Sygdziak</h2>
+        <p>Stay informed with real-time election data, live news, and key insights.</p>
+        <button onclick="scrollToSection('visualization-section')">Explore the Visualization</button>
+    </section>
+
+    <!-- Visualization Section -->
+    <section id="visualization-section" class="visualization">
+        <h2>Interactive Election Visualization</h2>
+            <div class="flourish-embed" data-src="story/2702157"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/story/2702157/thumbnail" width="100%" alt="visualization" /></noscript></div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown">
+        <h2>Countdown to Election in 2028</h2>
+        <p id="countdown-timer">Loading...</p>
+    </section>
+
+    <!-- Live News Ticker -->
+    <section class="news-ticker">
+        <h2>Breaking News</h2>
+        <div class="ticker" id="news-ticker">
+            <span>Donald Trump wins the 2024 president election.</span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

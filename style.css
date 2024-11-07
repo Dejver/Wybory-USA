@@ -1,0 +1,118 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f4f4f9;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Landing Section */
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.landing h1 {
+    font-size: 3em;
+    animation: titleBounce 2s ease infinite alternate;
+}
+
+.landing p {
+    margin-top: 15px;
+    font-size: 1.3em;
+}
+
+.landing button {
+    padding: 15px 30px;
+    background-color: #ffeb3b;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.landing button:hover {
+    background-color: #fdd835;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes titleBounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Visualization Section */
+.visualization {
+    padding: 80px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.visualization h2 {
+    color: #00796b;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.visualization-placeholder {
+    height: 450px;
+    background-color: #b2dfdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #004d40;
+    border: 2px dashed #00796b;
+    border-radius: 8px;
+}
+
+/* Countdown Timer Section */
+.countdown {
+    padding: 50px 20px;
+    background-color: #fce4ec;
+    text-align: center;
+}
+
+.countdown h2 {
+    color: #d81b60;
+}
+
+#countdown-timer {
+    font-size: 2em;
+    margin-top: 10px;
+    color: #880e4f;
+}
+
+/* News Ticker Section */
+.news-ticker {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-t
